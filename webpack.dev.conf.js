@@ -27,8 +27,9 @@ module.exports = merge(baseConfig, {
         contentBase: './dist',
         port: 3000,
         hot:false, //要真正启用热模块必须得按照我之前的博客
-        progress: true,  // 显示打包的进度条
+        progress: false,  // 显示打包的进度条
         compress: true,  // 启动 gzip 压缩
+        historyApiFallback: true
     },
     plugins:[new HtmlWebpackPlugin({
         //打包启用的模板

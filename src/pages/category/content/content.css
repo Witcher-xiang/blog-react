@@ -1,0 +1,92 @@
+@media (max-width:890px) {
+    .content{
+        margin: 3% auto;
+        width: 85%;
+    }
+
+}
+@media (min-width:890px) {
+    .content{
+        margin: 2% auto;
+        width: 70%;
+    }
+}
+.box{
+    box-shadow: #6c6c6c 0.066667rem 0.12rem 0.266667rem 0.066667rem;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.leftBox{
+    display: inline-block;
+    padding: 2rem;
+}
+.rightBox{
+    position: relative;
+    margin: 2rem;
+    display: inline-block;
+    border-left: 0.3rem solid #6c6c6c;
+    height: 40rem;
+    width: 50%;
+}
+.rightBox-essay-single-line{
+    display: block;
+    height: 0.1rem;
+    background-color: #6c6c6c;
+}
+.rightBox-essay-single{
+    margin-left: 1.3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+.rightBox-essay-single-head{
+    font-size: 2.5rem;
+    margin-left: 1.3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+/*头部小圆点*/
+.rightBox-essay-single-head:before{
+    border: .28rem solid #6c6c6c;
+    z-index: 99;
+    top: -0.1rem;
+    left: -0.95rem;
+    content: "";
+    position: absolute;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin: 9px;
+}
+/*小圆点*/
+.rightBox-essay-single:before{
+    border: .15rem solid #6c6c6c;
+    z-index: 99;
+    left: -0.6rem;
+    content: "";
+    position: absolute;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    display: inline-block;
+    margin: 9px;
+}
+
+
+.leftBox-title{
+    font-size: 3rem;
+}
+.leftBox-tags{
+
+    margin-top: 3rem;
+    list-style-type:none;
+}
+.leftBox-tags-li{
+    font-size: 1.9rem;
+    margin: 0.3rem;
+}

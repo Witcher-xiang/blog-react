@@ -1,0 +1,155 @@
+
+
+/*小于825用这个*/
+@media(max-width:890px) {
+    .header{
+        color: #787878;
+       width: 100%;
+       background: RGB(241,241,241);
+       display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        height: 3.4rem;
+        opacity: 0.7;
+        left: 0;
+        top: 0;
+    }
+
+    .header-menu-clicked{
+        box-shadow: #808080 10px 10px 30px 5px ;
+        position: fixed;
+        left: 10%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0.7rem 0 0.7rem;
+        margin-top: 3.2rem;
+        transition: height 1s;
+        height: auto;
+        color: RGBA(43,43,43,1);
+        animation:unfold 0.3s;
+        -moz-animation:unfold 0.3s; /* Firefox */
+        -webkit-animation:unfold 0.3s; /* Safari and Chrome */
+        -o-animation:unfold 0.3s; /* Opera */
+
+    }
+
+    .header-chunk-mobile{
+        margin: 0.4rem;
+        font-size: 1.6rem;
+    }
+}
+
+/*大于825用这个*/
+@media(min-width:890px) {
+    .header{
+        color: #787878;
+        width: 100%;
+        background: RGB(241,241,241);
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        height: 3.4rem;
+        opacity: 0.7;
+        text-align: center;
+        left: 0;
+        top: 0;
+    }
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-menu{
+    margin-left: 10%;
+    font-size:2rem;
+}
+
+.small-header{
+    color: #787878;
+    width: 100%;
+    background: RGB(241,241,241);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 3.2rem;
+    opacity: 0.7;
+    text-align: right;
+    left: 0;
+    top: 0;
+}
+
+.header-chunk{
+    color: #161616;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    width: 8%;
+    align-self: center;
+    height: 100%;
+}
+.header-chunk:hover{
+
+    border-bottom:2px solid ;
+    /*border-bottom-color: #5c5c5c;*/
+    border-bottom-color:white;
+    cursor: pointer;
+}
+.header-chunk:active{
+    border-bottom:0.18rem solid #5c5c5c;
+    cursor: pointer;
+}
+.header-chunk-clicked{
+    color: #282c34;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    width: 8%;
+    align-self: center;
+    height: 100%;
+    border-bottom:0.18rem solid #5c5c5c;
+    cursor: pointer;
+}
+.header-chunk-clicked:active{
+    border-bottom:0.18rem solid black;
+    cursor: pointer;
+}
+
+.header-chunk-clicked:hover{
+    color: black;
+    border-bottom:0.18rem solid #5c5c5c;
+    cursor: pointer;
+}
+
+@keyframes unfold
+{
+    from {height:0;background:transparent;color: RGBA(43,43,43,0);}
+    to {height:9.25rem;background:white;color: RGBA(43,43,43,1);}
+}
+
+@-moz-keyframes unfold /* Firefox */
+{
+    from {height:0;background:transparent;color: RGBA(43,43,43,0);}
+    to {height:9.25rem;background:white;color: RGBA(43,43,43,1);}
+}
+
+@-webkit-keyframes unfold /* Safari and Chrome */
+{
+    from {height:0;background:transparent;color: RGBA(43,43,43,0);}
+    to {height:9.25rem;background:white;color: RGBA(43,43,43,1);}
+}
+
+@-o-keyframes unfold /* Opera */
+{
+    from {height:0;background:transparent;color: RGBA(43,43,43,0);}
+    to {height:9.25rem;background:white;color: RGBA(43,43,43,1);}
+}

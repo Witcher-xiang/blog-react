@@ -1,0 +1,85 @@
+.Content{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topEssay-header{
+    font-size: 4rem;
+    font-weight: bold;
+}
+    .topEssay{
+        max-width: 100%;
+        min-width: 60%;
+
+    }
+    .topEssay-time{
+        font-size: 1.8rem;
+        color: RGB(119,119,119);
+    }
+    .topEssay-creatTime{
+        margin-right: 1rem;
+
+    }
+
+    .topEssay-img {
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .2);
+        display: block;
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+    .topEssay-digest{
+        font-size:2rem;
+        color: RGB(119,119,119);
+        margin-bottom: 1rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .topEssay-digest:hover{
+        line-height: 4rem;
+        height: 4rem;
+        padding-left: 1rem;
+        transition: padding-left,0.3s;
+        width: 100%;
+        background: RGB(119,119,119);
+        font-size:2rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    .essay-content{
+        font-size: 2rem;
+        color: RGB(119,119,119);
+    }
+    .essay-tags{
+        font-size: 2.2rem;
+        color: RGB(119,119,119);
+        text-align: right;
+        margin-right: 1.5rem;
+    }
+    .essay-readMoreContent{
+        margin: 2rem;
+       display: flex;
+        flex-direction: column;
+    }
+    .essay-readMore{
+        text-align: center;
+        line-height: 3rem;
+        align-self: center;
+        border-radius: 5%;
+        width: 10rem;
+        height: 3rem;
+        color: RGB(119,119,119);
+        background: RGB(250,250,250);
+        border: 6px gainsboro solid;
+    }
+    .essay-readMore:hover{
+        background: RGB(119,119,119);
+        color: white;
+    }
+    .essay-line{
+        border-bottom: 0.1rem rgba(28, 28, 28, 0.84) solid;
+    }
+
+
