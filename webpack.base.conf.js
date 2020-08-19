@@ -8,12 +8,12 @@ module.exports = {
     //出口文件
     output: {
         filename: 'bundle.[hash].js',
-        path: path.join(__dirname, '/dist')
+        path: path.join(__dirname, '/dist') // 拼接出一个路径字符串
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.js$/,  // test是指命名的匹配规则
                 use: 'babel-loader',
                 exclude: /node_modules/
             },
@@ -30,7 +30,7 @@ module.exports = {
                 collapseWhitespace: false,    //删除空白符与换行符
             }
         }),
-        new CleanWebpackPlugin() //注意这里新版不用传入dist
+      //  new CleanWebpackPlugin() //注意这里新版不用传入dist
     ]
 };
 

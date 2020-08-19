@@ -31,8 +31,8 @@ module.exports = merge(baseConfig, {
             {
                 test: /\.css$/,
                 loader: [
-                    MiniCssExtractPlugin.loader,  // 注意，这里不再用 style-loader
-                    'css-loader',
+                    MiniCssExtractPlugin.loader,  // 注意，这里不再用 style-loader  style-loader是用来生成style标签加入到head中的
+                    'css-loader',                  // 用于加载.css文件
                     'postcss-loader'             // 目的为了保证css的兼容性，给css3属性加上前缀
                 ]
             },
@@ -41,7 +41,7 @@ module.exports = merge(baseConfig, {
                 // 增加 'less-loader' ，注意顺序
                 loader: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    'css-loader', 
                     'less-loader',
                     'postcss-loader'
                 ]
@@ -52,6 +52,7 @@ module.exports = merge(baseConfig, {
         new MiniCssExtractPlugin({
             filename: 'css/main.[contentHash:8].css'
         }),
+        /*将CSS提取为独立的文件的插件，对每个包含css的js文件都会创建一个CSS文件，支持按需加载css和sourceMap*/
     ],
 
     optimization: {

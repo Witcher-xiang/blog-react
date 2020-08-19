@@ -18,7 +18,7 @@ module.exports = merge(baseConfig, {
             },
             {
                 test: /\.less$/,
-                // 增加 'less-loader' ，注意顺序
+                // 增加 'less-loader' ，注意顺序 从右向左
                 loader: ['style-loader', 'css-loader', 'less-loader']
             }
         ]
@@ -26,7 +26,7 @@ module.exports = merge(baseConfig, {
     devServer: {
         contentBase: './dist',
         port: 3000,
-        hot:false, //要真正启用热模块必须得按照我之前的博客
+        hot:true, //要真正启用热模块必须得按照我之前的博客
         progress: false,  // 显示打包的进度条
         compress: true,  // 启动 gzip 压缩
         historyApiFallback: true
