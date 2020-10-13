@@ -17,9 +17,16 @@ module.exports = {
                 use: 'babel-loader',
                 exclude: /node_modules/
             },
-
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
         ]
     },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ]
+      },
     plugins: [
         //网站入口html
         new HtmlWebpackPlugin({
